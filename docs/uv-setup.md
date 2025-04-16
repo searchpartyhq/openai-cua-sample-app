@@ -41,13 +41,12 @@ tags: uv python setup notes
 
 To run the provided examples using `uv`, execute the following commands from the project root:
 
+Everything in the `examples/` folder requires special API keys to Scrapers
+
 ```shell
-# Function calling example
-uv run python examples/function_calling_example.py
+# Runs the local playwright version
+uv run python simple_cua_loop.py
 
-# Playwright with custom functions example
-uv run python examples/playwright_with_custom_functions.py
-
-# Weather example
-uv run python examples/weather_example.py
+# Needs the docker container running
+uv run python simple_cua_docker_loop.py
 ```
