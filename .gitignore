@@ -1,3 +1,6 @@
 __pycache__/
 .env
 .venv/
+_screenshots/
+.DS_Store
+openai_cua_sample_app.egg-info/

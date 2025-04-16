@@ -28,7 +28,7 @@ class LocalPlaywrightComputer(BasePlaywrightComputer):
         page.set_viewport_size({"width": width, "height": height})
         page.on("close", self._handle_page_close)
 
-        page.goto("https://bing.com")
+        page.goto("https://retail-ai-shopify-mirror.onrender.com/products/grid/2")
         
         return browser, page
         
