@@ -73,6 +73,11 @@ def handle_item(item, computer: Computer):
 def main():
     """Run the CUA (Computer Use Assistant) loop, using Docker."""
     with DockerComputer() as computer:
+        # Explicitly launch browser via xdotool
+        print("Launching browser...")
+        computer._exec("firefox-esr https://retail-ai-shopify-mirror.onrender.com/products/grid/2") # Use firefox-esr
+        computer.wait(3000) # Give it time to load
+
         tools = [
             {
                 "type": "computer-preview",
